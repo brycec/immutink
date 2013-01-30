@@ -1,0 +1,15 @@
+<Body:>
+{#with _ink}
+{#if owner}
+	{{name}} is owned by {{owner}}
+{else}
+<form method="post" class="clear" x-bind="keydown/50: validateAdoption">
+	<input type="text" id="adopt_owner" name="owner" placeholder="your name#your secret (optional)"><br>
+	<input type="text" id="adopt_name" name="name" placeholder="muti's name"><br>
+	<input type="submit" value="adopt this muti!" disabled="{not(_is_valid)}">
+</form>
+ {/}
+ <div class="clear">
+ 	<img src="{data_url}">
+ </div>
+{/}

@@ -1,0 +1,19 @@
+{
+  "name": "immutink",
+  "description": "",
+  "version": "0.0.0",
+  "main": "./server.js",
+  "dependencies": {
+
+    "derby": "git://github.com/codeparty/derby#master",
+    "racer": "git://github.com/codeparty/racer#master",
+
+    "express": "3.0.0beta4",
+    "MD5": ">=0.0.0",
+    "gzippo": ">=0.1.7"
+  },
+  "private": true,
+  "devDependencies": {
+    "coffee-script": ">=1.3.3"
+  }
+}

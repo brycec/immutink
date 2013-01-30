@@ -1,0 +1,19 @@
+
+<Body:>
+<div class="pull-left">
+	<div>
+		{{#if not(_ink_remaining)}}
+			You're out of ink! <a href="/{{space}}">adopt</a> some mutis first.
+		{{else}}
+		<p><a x-bind="click: newColor">color shift</a></p>
+		{{/}}
+	</div>
+	<form method="post">
+		<input type="submit" value="{#if _submit_ready}DONE!{else}use some ink first... {/}" disabled="{not(_submit_ready)}">
+		<input type="hidden" name="data_url" value="{_data_url}">
+	</form>
+</div>
+
+<Footer:>
+  </div>
+  <canvas id="theCanvas" resize></canvas>

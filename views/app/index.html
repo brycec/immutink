@@ -1,0 +1,41 @@
+<import: src="new">
+<import: src="ink">
+
+<Title:>
+  immutink
+
+<Header:>
+  <ui:connectionAlert>
+
+  <div class="hud">
+  <h1 class="pull-left"><a href="/i">i</a>mmutink</h1>
+  <div class="pull-left">
+    <strong>ink left:</strong> <span>{_ink_remaining}</span>
+    <sup><a x-bind="click: inkPlz">+</a></sup>
+  </div>
+
+<Body:>
+  <app:inkList>
+
+<Footer:>
+  </div>  
+
+<inkList:>
+  <h2>
+    <a href="/{{space}}/new">spawn a muti</a>
+  </h2>
+  <div class="clear">
+    <ul class="muti-list">{#each _inks_sorted}<app:inkListItem>{/}</ul>
+  </div>
+<inkListItem:>
+  <li><a href="/{{space}}/{{id}}"><img src="{{data_url}}"></a>
+    {{#if name}}
+      <br><strong>{{name}}</strong>
+      <br>child of <em>{{owner}}</em>
+    {{else}}
+      <br><strong>adopt me!</strong>
+    {{/}}
+  </li>
+
+<Scripts:>
+  <script src="/js/paper.js"></script>
