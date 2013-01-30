@@ -10,7 +10,9 @@
 
     "express": "3.0.0beta4",
     "MD5": ">=0.0.1",
-    "gzippo": ">=0.0.9"
+    "gzippo": ">=0.0.9",
+
+    "racer-db-mongo": ">=0.3.13"
   },
   "private": true,
   "devDependencies": {
